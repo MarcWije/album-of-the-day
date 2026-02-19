@@ -1,63 +1,39 @@
 import Image from "next/image";
+import { belanosima, bellota, baskervville } from '@/app/ui/fonts';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="flex min-h-screen items-center justify-center bg-blue-950 dark:bg-red-950">
+      <main className="flex min-h-screen w-full flex-col items-center justify-between py-32 px-16">
+        <div className="flex flex-col items-center gap-6 text-center">
+          <h1 className={` ${belanosima.className} text-7xl font-semibold leading-10 text-center tracking-tight text-white dark:text-zinc-50`}>
+            Album of the Day
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className={`${bellota.className} max-w-md text-lg leading-8 text-yellow-200 dark:text-zinc-400`}>
+            Don't know what to listen to today? We're here to help
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="flex flex-col items-center">
+          <Image className= "rounded-xl shadow-xl/30 transition duration-500 hover:scale-105"
+            src="/octavarium.jpg"
+            width={500}
+            height={500}
+            alt="Dream Theater's Octavarium"
+          />
+        </div>
+        <div className="flex flex-col items-center">
+          <p className={`${bellota.className} text-4xl font-bold text-center text-gray-500 p-5`}>
+            Octavarium
+          </p>
+          <p className={`${baskervville.className} text-xl text-left text-gray-300 max-w-3/6 leading-7`}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at pellentesque urna, ut lacinia urna. In tristique arcu in eros maximus, rhoncus convallis velit ultricies. Fusce laoreet libero et urna maximus tincidunt. Suspendisse potenti. Nullam in massa sit amet augue auctor volutpat. Duis venenatis tincidunt massa, eget malesuada leo tempor nec. Cras ac ligula elementum, rhoncus turpis eu, tempus ex. Quisque scelerisque dolor orci, id faucibus risus venenatis eget. Sed eget ullamcorper nisi, vitae luctus velit. Etiam mi magna, porta sit amet auctor id, interdum sit amet massa. Aliquam aliquet congue nisl nec ornare. Etiam feugiat nunc quis ex gravida, molestie egestas leo consectetur. Aliquam et dapibus libero. Fusce imperdiet sollicitudin mauris, quis faucibus neque sodales non. Ut maximus lobortis nisl a vestibulum.
+            <br></br>
+            <br></br>
+            Curabitur a quam nibh. Nunc porta congue tortor in maximus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel risus dignissim, aliquam sapien quis, pulvinar justo. Mauris efficitur justo non risus ullamcorper, in ultricies enim sollicitudin. Donec sit amet eros id magna lobortis ultrices. Nulla sed nisi tellus. Vivamus finibus neque at rhoncus gravida. Maecenas eros metus, ultrices sed elit in, interdum ultricies ante. Nunc nisl arcu, rutrum vel nisl et, rutrum gravida orci. Proin sit amet sapien sed felis finibus dignissim. Sed viverra posuere hendrerit. Sed sit amet ligula pretium, efficitur tellus in, laoreet ante. Quisque a molestie lectus. Nulla porta, mauris convallis varius hendrerit, diam arcu fermentum massa, tempor ornare lorem mi quis risus.
+            <br></br>
+            <br></br>
+            Etiam molestie leo a libero venenatis lacinia. In velit augue, sodales nec neque quis, aliquet fermentum augue. Praesent dolor lectus, sagittis id tortor eget, vulputate sagittis turpis. Pellentesque maximus, dolor id tincidunt viverra, est ipsum imperdiet lacus, et sodales urna neque a tortor. Morbi leo massa, pharetra at mauris in, consequat bibendum mi. Donec molestie, ligula ac bibendum tincidunt, velit eros rhoncus lectus, non aliquam mi augue ac ante. Etiam vitae tempus velit, eget interdum dui. Duis nec metus sed libero pharetra varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec nec urna turpis. Praesent tincidunt tempor porta. Fusce ex nibh, eleifend sit amet tincidunt vel, pharetra et mauris. Phasellus interdum malesuada aliquet. Ut laoreet dolor eros. Integer nec nunc vestibulum nunc congue hendrerit. 
+          </p>
         </div>
       </main>
     </div>
