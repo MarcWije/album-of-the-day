@@ -1,11 +1,12 @@
 "use client"
 
 import Image from "next/image";
-import { belanosima, bellota, baskervville, jost } from '@/app/ui/fonts';
+import { belanosima, bellota, baskervville, jost, rajdhani } from '@/app/ui/fonts';
 import BlurText from "@/components/BlurText";
 import Grainient from "@/components/Grainient";
 import CurvedLoop from "@/components/CurvedLoop";
 import ClickSpark from "@/components/ClickSpark";
+import TiltedCard from '@/components/TiltedCard';
 
 export default function Home() {
   const handleAnimationComplete = () => {
@@ -62,19 +63,26 @@ export default function Home() {
             Don't know what to listen to today? We're here to help
           </p>
         </div>
-        <div className="flex gap-4 max-w-4xl">
+        <div className="flex gap-4 max-w-4xl ">
           <div className="p-3">
-            <Image className= "rounded-xl shadow-xl/30 transition duration-500 hover:scale-105"
-              src="/octavarium.jpg"
-              width={500}
-              height={500}
-              alt="Dream Theater's Octavarium"
+            <TiltedCard
+              imageSrc="/octavarium.jpg"
+              altText="Dream Theater - Octavarium Album Cover"
+              containerHeight="500px"
+              containerWidth="500px"
+              imageHeight="500px"
+              imageWidth="500px"
+              rotateAmplitude={12}
+              scaleOnHover={1.05}
+              showMobileWarning={false}
+              showTooltip
             />
           </div>
           <div className="flex flex-col items-start space-y-3 justify-center">
             <br></br>
               <h2 className={`${jost.className} text-6xl font-bold text-gray-200`}>Octavarium</h2>
-              <h3 className={`${jost.className} text-5xl font-semibold text-gray-500`}>Dream Theater</h3>
+              <h3 className={`${jost.className} text-5xl font-normal text-gray-500`}>Dream Theater</h3>
+              <h3 className={`${rajdhani.className} text-5xl font-extralight text-gray-500`}>2005</h3>
           </div>
         </div>
         <div className="flex flex-col items-center">
