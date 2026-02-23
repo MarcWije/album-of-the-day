@@ -17,7 +17,7 @@ export default function Home() {
 
   const [topIndex, setTopIndex] = useState(0);
 
-  const images = [
+  const albumImages = [
   "/fear-inoculum.jpg",
   "/metropolis-pt-2.jpg",
   "/ghost-reveries.jpg",
@@ -110,7 +110,7 @@ export default function Home() {
                 randomRotation={false}
                 sensitivity={200}
                 sendToBackOnClick={true}
-                cards={images.map((src, i) => (
+                cards={albumImages.map((src, i) => (
                   <img 
                     key={i} 
                     src={src} 
