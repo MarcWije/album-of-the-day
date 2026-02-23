@@ -8,11 +8,14 @@ import ClickSpark from "@/components/ClickSpark";
 import TiltedCard from '@/components/TiltedCard';
 import Stack from "@/components/Stack";
 import SpotifyPopup from '@/components/SpotifyPopUp';
+import { useState } from "react";
 
 export default function Home() {
   const handleAnimationComplete = () => {
     console.log('Animation completed!');
   };
+
+  const [topIndex, setTopIndex] = useState(0);
 
   const images = [
   "/fear-inoculum.jpg",
@@ -20,6 +23,13 @@ export default function Home() {
   "/ghost-reveries.jpg",
   "/magma.jpg"
 ];
+
+  const albumNames = [
+    "Fear Inoculum - Tool",
+    "Metropolis Part II - Dream Theater",
+    "Ghost Reveries - Opeth",
+    "Magma - Gojira"
+  ]
 
   const albumId = "4v6kYkn7mYjlWS9vONmmCP";
 
@@ -94,7 +104,7 @@ export default function Home() {
               <h3 className={`${rajdhani.className} text-5xl font-extralight text-gray-500`}>2005</h3>
           </div>
           <div className="flex flex-col justify-center items-center ml-auto">
-            <h3 className={`${jost.className} text-4xl font-light text-gray-400`}>Similar Albums:</h3> 
+            <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 
             <div style={{ width: 300, height: 300 }}>
               <Stack
                 randomRotation={false}
@@ -109,14 +119,19 @@ export default function Home() {
                   />
                 ))}
                 autoplay={false}
+                onTopCardChange={(index) => setTopIndex(index)}
                 autoplayDelay={3000}
                 pauseOnHover={false}
+              
               />
             </div>
+          <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center`}>
+            {albumNames[topIndex]}
+          </p>
           </div>
         </div>
         <div className="flex p-3 justify-center">
-                <SpotifyPopup albumId={`${albumId}`}/>
+          <SpotifyPopup albumId={`${albumId}`}/>
         </div>
         <div className="flex flex-col items-center">
           <p className={`${bellota.className} text-4xl font-bold text-center text-gray-500 p-2`}>

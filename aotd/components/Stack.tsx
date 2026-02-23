@@ -58,6 +58,7 @@ interface StackProps {
   pauseOnHover?: boolean;
   mobileClickOnly?: boolean;
   mobileBreakpoint?: number;
+  onTopCardChange?: (index: number) => void;
 }
 
 export default function Stack({
@@ -70,7 +71,8 @@ export default function Stack({
   autoplayDelay = 3000,
   pauseOnHover = false,
   mobileClickOnly = false,
-  mobileBreakpoint = 768
+  mobileBreakpoint = 768,
+  onTopCardChange
 }: StackProps) {
   const [isMobile, setIsMobile] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
@@ -88,70 +90,45 @@ export default function Stack({
   const shouldDisableDrag = mobileClickOnly && isMobile;
   const shouldEnableClick = sendToBackOnClick || shouldDisableDrag;
 
-  const [stack, setStack] = useState<{ id: number; content: React.ReactNode }[]>(() => {
+  const [stack, setStack] = useState<{ id: number; content: React.ReactNode; originalIndex: number }[]>(() => {
     if (cards.length) {
-      return cards.map((content, index) => ({ id: index + 1, content }));
+      return cards.map((content, index) => ({
+        id: index + 1,
+        content,
+        originalIndex: index 
+      }));
     } else {
-      return [
-        {
-          id: 1,
-          content: (
-            <img
-              src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=500&auto=format"
-              alt="card-1"
-              className="card-image"
-            />
-          )
-        },
-        {
-          id: 2,
-          content: (
-            <img
-              src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=500&auto=format"
-              alt="card-2"
-              className="card-image"
-            />
-          )
-        },
-        {
-          id: 3,
-          content: (
-            <img
-              src="https://images.unsplash.com/photo-1452626212852-811d58933cae?q=80&w=500&auto=format"
-              alt="card-3"
-              className="card-image"
-            />
-          )
-        },
-        {
-          id: 4,
-          content: (
-            <img
-              src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format"
-              alt="card-4"
-              className="card-image"
-            />
-          )
-        }
+      const defaultImages = [
+        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?q=80&w=500&auto=format",
+        "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=500&auto=format",
+        "https://images.unsplash.com/photo-1452626212852-811d58933cae?q=80&w=500&auto=format",
+        "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=500&auto=format"
       ];
+
+      return defaultImages.map((src, index) => ({
+        id: index + 1,
+        content: <img src={src} alt={`card-${index + 1}`} className="card-image" />,
+        originalIndex: index 
+      }));
     }
+});
+
+useEffect(() => {
+  if (onTopCardChange && stack.length > 0) {
+    const topCard = stack[stack.length - 1]; // last element is the top card
+    onTopCardChange(topCard.originalIndex); // 👈 use original index
+  }
+}, [stack, onTopCardChange]);
+
+const sendToBack = (id: number) => {
+  setStack(prev => {
+    const newStack = [...prev];
+    const index = newStack.findIndex(card => card.id === id);
+    const [card] = newStack.splice(index, 1);
+    newStack.unshift(card);
+    return newStack;
   });
-
-  useEffect(() => {
-    if (cards.length) {
-      setStack(cards.map((content, index) => ({ id: index + 1, content })));
-    }
-  }, [cards]);
-
-  const sendToBack = (id: number) => {
-    setStack(prev => {
-      const newStack = [...prev];
-      const index = newStack.findIndex(card => card.id === id);
-      const [card] = newStack.splice(index, 1);
-      newStack.unshift(card);
-      return newStack;
-    });
-  };
+};
 
   useEffect(() => {
     if (autoplay && stack.length > 1 && !isPaused) {
