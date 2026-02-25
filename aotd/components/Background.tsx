@@ -18,7 +18,7 @@ export default function Background({
           color1={color1}
           color2={color2}
           color3={color3}
-          timeSpeed={0.6}
+          timeSpeed={0.9}
           colorBalance={-0.14}
           warpStrength={1}
           warpFrequency={5}

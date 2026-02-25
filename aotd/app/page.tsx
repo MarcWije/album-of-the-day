@@ -10,22 +10,23 @@ import AlbumCard from '@/components/AlbumCard';
 
 export default function Home() {
   const albumId = "4v6kYkn7mYjlWS9vONmmCP";
-
+  const authorNote = "This album review placeholder was taken from https://www.seaoftranquility.org/";
+  const marqueeText = "Hope you enjoy listening!";
   return (
     <div className="flex ">
       <ClickSpark
         sparkColor='#fff'
         sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
+        sparkRadius={12}
+        sparkCount={7}
+        duration={300}
       > 
       <Background/>
       <main style={{ position: "relative", zIndex: 1 }} className="flex min-h-screen w-full flex-col justify-center py-16 lg:py-28 px-16">
         <Header/>
         <AlbumCard/>
         <div className="flex p-3 justify-center">
-          <SpotifyPopup albumId={`${albumId}`}/>
+          <SpotifyPopup albumId={albumId}/>
         </div>
         <div className="flex flex-col items-center w-9/12 mx-auto">
           <div className='flex'>
@@ -42,12 +43,12 @@ export default function Home() {
               <br></br>
               So where does Octavarium sit among Dream Theater's fairly prolific back catalog? I'll leave that one up to the reader to decide. For my taste, it's the band's finest album since Scenes From a Memory; it's certainly their most tuneful album in quite some time. I oftentimes struggle with star ratings but I'm giving Octavarium four strong stars. I would easily give it higher marks if the first few tracks were up to snuff, but they are just so bland that five stars would be an inaccurate representation of the album in balance. But program out at least the first two songs and you have one of the best albums of 2005. 
               <br></br>
-              <i>This album review placeholder was taken from https://www.seaoftranquility.org/</i>
+              <i>{authorNote}</i>
             </p>
           </div>
         </div>
         <CurvedLoop 
-          marqueeText="Hope you enjoy listening!"
+          marqueeText={marqueeText}
           speed={2}
           curveAmount={200}
           direction="right"
