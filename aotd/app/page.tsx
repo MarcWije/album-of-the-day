@@ -1,41 +1,17 @@
 "use client"
 
-import { belanosima, bellota, baskervville, jost, rajdhani } from '@/app/ui/fonts';
-import BlurText from "@/components/BlurText";
-import Grainient from "@/components/Grainient";
+import {baskervville} from '@/app/ui/fonts';
+import Background from '@/components/Background';
 import CurvedLoop from "@/components/CurvedLoop";
 import ClickSpark from "@/components/ClickSpark";
-import TiltedCard from '@/components/TiltedCard';
-import Image from 'next/image';
-import Stack from "@/components/Stack";
+import Header from '@/components/Header';
 import SpotifyPopup from '@/components/SpotifyPopUp';
-import { useState } from "react";
+import AlbumCard from '@/components/AlbumCard';
 
 export default function Home() {
-  const handleAnimationComplete = () => {
-    console.log('Animation completed!');
-  };
-
-  const [topIndex, setTopIndex] = useState(0);
-
-  const albumImages = [
-  "/fear-inoculum.jpg",
-  "/metropolis-pt-2.jpg",
-  "/ghost-reveries.jpg",
-  "/magma.jpg"
-];
-
-  const albumNames = [
-    "Fear Inoculum - Tool",
-    "Metropolis Part II - Dream Theater",
-    "Ghost Reveries - Opeth",
-    "Magma - Gojira"
-  ]
-
   const albumId = "4v6kYkn7mYjlWS9vONmmCP";
 
   return (
-    
     <div className="flex ">
       <ClickSpark
         sparkColor='#fff'
@@ -44,102 +20,10 @@ export default function Home() {
         sparkCount={8}
         duration={400}
       > 
-      <div style={{ width: '100%', height: '100%', position: 'fixed', zIndex: -1 }}>
-        <Grainient
-          color1="#000009"
-          color2="#184054"
-          color3="#245F7C"
-          timeSpeed={0.6}
-          colorBalance={-0.14}
-          warpStrength={1}
-          warpFrequency={5}
-          warpSpeed={2}
-          warpAmplitude={50}
-          blendAngle={0}
-          blendSoftness={0.05}
-          rotationAmount={500}
-          noiseScale={2}
-          grainAmount={0.1}
-          grainScale={2}
-          grainAnimated={false}
-          contrast={1.5}
-          gamma={1}
-          saturation={1}
-          centerX={0}
-          centerY={0}
-          zoom={0.9}
-        />
-      </div>
+      <Background/>
       <main style={{ position: "relative", zIndex: 1 }} className="flex min-h-screen w-full flex-col justify-center py-16 lg:py-28 px-16">
-        <div className="flex flex-col items-center gap-3 text-center">
-          <BlurText
-            text="Album of the Day"
-            delay={100}
-            animateBy="words"
-            direction="top"
-            onAnimationComplete={handleAnimationComplete}
-            className={`${belanosima.className} text-5xl lg:text-8xl font-semibold leading-10 justify-center text-center text-white space-y-3`}
-          />
-          <p className={`${bellota.className} max-w-md text-lg leading-8 text-yellow-200 dark:text-zinc-400`}>
-            Don't know what to listen to today? We're here to help
-          </p>
-        </div>
-        <div className="flex flex-col lg:flex-row gap-4 w-full lg:w-10/12 mx-auto">
-          <div className="p-6 items-center hidden lg:block lg:w-5/12">
-            <TiltedCard
-              imageSrc="/octavarium.jpg"
-              altText="Dream Theater - Octavarium Album Cover"
-              containerHeight="500px"
-              containerWidth="500px"
-              imageHeight="500px"
-              imageWidth="500px"
-              rotateAmplitude={12}
-              scaleOnHover={1.05}
-              showMobileWarning={false}
-              showTooltip
-            />
-          </div>
-          <div className='flex flex-col items-center lg:hidden w-full p-4'>
-            <Image
-              src = "/octavarium.jpg"
-              width =  {500}
-              height = {500}
-              className='rounded-xl'
-              alt = "Octavarium Album Art"
-              />
-          </div>
-          <div className="flex flex-col lg:items-start space-y-3 lg:justify-center">
-              <h2 className={`${jost.className} text-5xl lg:text-6xl font-bold text-gray-200 text-center lg:text-right`}>Octavarium</h2>
-              <h3 className={`${jost.className} text-4xl lg:text-5xl font-normal text-gray-500 text-center lg:text-right`}>Dream Theater</h3>
-              <h3 className={`${rajdhani.className} text-4xl lg:text-5xl font-extralight text-gray-500 text-center lg:text-right`}>2005</h3>
-          </div>
-          <div className="flex flex-col justify-center items-center lg:ml-auto py-5">
-            <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 
-            <div className="flex relative w-62.5 h-62.5 lg:w-90 lg:h-90">
-              <Stack
-                randomRotation={false}
-                sensitivity={200}
-                sendToBackOnClick={true}
-                cards={albumImages.map((src, i) => (
-                  <img 
-                    key={i} 
-                    src={src} 
-                    alt={`card-${i + 1}`} 
-                    className="w-full h-full object-cover rounded-lg shadow-xl"
-                  />
-                ))}
-                autoplay={false}
-                onTopCardChange={(index) => setTopIndex(index)}
-                autoplayDelay={3000}
-                pauseOnHover={false}
-              
-              />
-            </div>
-          <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center`}>
-            {albumNames[topIndex]}
-          </p>
-          </div>
-        </div>
+        <Header/>
+        <AlbumCard/>
         <div className="flex p-3 justify-center">
           <SpotifyPopup albumId={`${albumId}`}/>
         </div>
