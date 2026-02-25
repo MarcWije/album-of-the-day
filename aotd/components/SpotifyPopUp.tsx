@@ -11,7 +11,6 @@ export default function SpotifyPopup({ albumId }: SpotifyPopupProps) {
 
   return (
     <>
-      {/* Trigger button (optional) */}
       {!open && (
         <button
           onClick={() => setOpen(true)}
@@ -21,7 +20,6 @@ export default function SpotifyPopup({ albumId }: SpotifyPopupProps) {
         </button>
       )}
 
-      {/* Fixed popup */}
       {open && (
         <div className="fixed bottom-4 right-4 w-[320px] h-100 z-50 shadow-lg rounded overflow-hidden flex flex-col bg-gray-900">
           {/* Close button */}
@@ -32,7 +30,6 @@ export default function SpotifyPopup({ albumId }: SpotifyPopupProps) {
             ×
           </button>
 
-          {/* Spotify iframe */}
           <iframe
             src={`https://open.spotify.com/embed/album/${albumId}`}
             width="100%"
