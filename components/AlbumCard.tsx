@@ -39,22 +39,22 @@ export default function AlbumCard({
 
 
     return(
-    <div className="flex flex-col lg:flex-row gap-4 w-full lg:w-10/12 mx-auto">
-        <div className="p-6 items-center hidden lg:block lg:w-5/12">
+    <div className="flex flex-col xl:flex-row gap-4 w-full xl:w-10/12 mx-auto">
+        <div className="p-6 items-center hidden xl:block xl:w-5/12">
             <TiltedCard
                 imageSrc={imagesrc}
                 altText={`${albumTitle} Album Art`}
-                containerHeight="500px"
-                containerWidth="500px"
-                imageHeight="500px"
-                imageWidth="500px"
+                containerHeight="400px"
+                containerWidth="400px"
+                imageHeight="400px"
+                imageWidth="400px"
                 rotateAmplitude={12}
-                scaleOnHover={1.05}
+                scaleOnHover={1.2}
                 showMobileWarning={false}
                 showTooltip
             />
         </div>
-        <div className='flex flex-col items-center lg:hidden w-full p-4'>
+        <div className='flex flex-col items-center xl:hidden w-full p-4'>
             <Image
                 src = {imagesrc}
                 width =  {500}
@@ -63,14 +63,14 @@ export default function AlbumCard({
                 alt = {`${albumTitle} Album Art`}
                 />
         </div>
-                <div className="flex flex-col lg:items-start space-y-3 lg:justify-center">
-                    <h2 className={`${jost.className} text-5xl lg:text-6xl font-bold text-gray-200 text-center lg:text-right`}>{albumTitle}</h2>
-                    <h3 className={`${jost.className} text-4xl lg:text-5xl font-normal text-gray-500 text-center lg:text-right`}>{albumArtist}</h3>
-                    <h3 className={`${rajdhani.className} text-4xl lg:text-5xl font-extralight text-gray-500 text-center lg:text-right`}>{albumYear}</h3>
+                <div className="flex flex-col xl:items-start space-y-3 xl:justify-center">
+                    <h2 className={`${jost.className} text-5xl xl:text-6xl font-bold text-gray-200 text-center xl:text-right`}>{albumTitle}</h2>
+                    <h3 className={`${jost.className} text-4xl xl:text-5xl font-normal text-gray-500 text-center xl:text-right`}>{albumArtist}</h3>
+                    <h3 className={`${rajdhani.className} text-4xl xl:text-5xl font-extralight text-gray-500 text-center xl:text-right`}>{albumYear}</h3>
         </div>
-                  <div className="flex flex-col justify-center items-center lg:ml-auto py-5">
+                  <div className="flex flex-col justify-center items-center xl:ml-auto py-5">
             <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 
-            <div className="flex relative w-62.5 h-62.5 lg:w-90 lg:h-90">
+            <div className="flex relative w-62.5 h-62.5 xl:w-90 xl:h-90">
               <Stack
                 randomRotation={false}
                 sensitivity={200}
