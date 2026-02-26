@@ -65,10 +65,12 @@ export default function AlbumPage({ album
         <div className="flex p-3 justify-center">
           <SpotifyPopup albumId={albumId}/>
         </div>
-        <Review
-          authorNote=  {authorNote}
-          text = {text}
-          />
+        <div className="flex flex-col items-center w-10/12 mx-auto">
+          <Review
+            authorNote=  {authorNote}
+            text = {text}
+            />
+        </div>
         <CurvedLoop 
           marqueeText={marqueeText}
           speed={2}

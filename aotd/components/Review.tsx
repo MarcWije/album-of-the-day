@@ -10,14 +10,12 @@ export default function Review({
     authorNote = "This was written by gremlins"
 }:ReviewProps ){
     return(
-        <div className="flex flex-col items-center w-9/12 mx-auto">
-          <div className='flex'>
-            <p className={`${baskervville.className} prose text-xl text-left text-gray-300 lg:max-w-2/6 leading-7 space-y-8`}>
-                <div dangerouslySetInnerHTML={{ __html:text }} className='space-y-4'/>
-                <br></br>
-              <i>{authorNote}</i>
-            </p>
-          </div>
+        <div className='flex'>
+          <p className={`${baskervville.className} prose  text-lg lg:text-xl text-left text-gray-300 lg:max-w-2/6 leading-7 space-y-8`}>
+              <div dangerouslySetInnerHTML={{ __html:text }} className='space-y-4'/>
+              <br></br>
+            <i>{authorNote}</i>
+          </p>
         </div>
     )
 }

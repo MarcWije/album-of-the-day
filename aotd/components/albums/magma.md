@@ -1,6 +1,6 @@
 ---
 filename: "magma.md"
-albumId: "4v6kYkn7mYjlWS9vONmmCP"
+albumId: "7D7V6M05UIOTjLdqbwRX0w"
 heading: "Album of the Day"
 subheading: "February 27th, 2026"
 date: "27022026"
