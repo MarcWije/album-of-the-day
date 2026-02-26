@@ -1,7 +1,9 @@
 ---
+filename: "octavarium.md"
 albumId: "4v6kYkn7mYjlWS9vONmmCP"
 heading: "Album of the Day"
 subheading: "March 23rd, 2026"
+date: "26022026"
 albumTitle: "Octavarium"
 albumArtist: "Dream Theater"
 albumYear: "2005"
