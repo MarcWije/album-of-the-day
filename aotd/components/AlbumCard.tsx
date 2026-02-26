@@ -1,3 +1,5 @@
+"use client"
+
 import TiltedCard from '@/components/TiltedCard';
 import Image from 'next/image';
 import Stack from "@/components/Stack";
@@ -6,14 +8,18 @@ import { useState } from "react";
 
 interface AlbumCardProps{
     imagesrc?:string;
-    altText?:string;
+    albumTitle?:string;
+    albumArtist?:string;
+    albumYear?:string;
     albumImages?:string[];
     albumNames?:string[];
 }
 
 export default function AlbumCard({
     imagesrc ="/octavarium.jpg",
-    altText ="Default",
+    albumTitle = "Octavarium",
+    albumArtist = "Dream Theater",
+    albumYear = "2005",
     albumImages = [
         "/fear-inoculum.jpg",
         "/metropolis-pt-2.jpg",
@@ -37,7 +43,7 @@ export default function AlbumCard({
         <div className="p-6 items-center hidden lg:block lg:w-5/12">
             <TiltedCard
                 imageSrc={imagesrc}
-                altText={`${altText} Album Art`}
+                altText={`${albumTitle} Album Art`}
                 containerHeight="500px"
                 containerWidth="500px"
                 imageHeight="500px"
@@ -54,13 +60,13 @@ export default function AlbumCard({
                 width =  {500}
                 height = {500}
                 className='rounded-xl'
-                alt = {`${altText} Album Art`}
+                alt = {`${albumTitle} Album Art`}
                 />
         </div>
                 <div className="flex flex-col lg:items-start space-y-3 lg:justify-center">
-                    <h2 className={`${jost.className} text-5xl lg:text-6xl font-bold text-gray-200 text-center lg:text-right`}>Octavarium</h2>
-                    <h3 className={`${jost.className} text-4xl lg:text-5xl font-normal text-gray-500 text-center lg:text-right`}>Dream Theater</h3>
-                    <h3 className={`${rajdhani.className} text-4xl lg:text-5xl font-extralight text-gray-500 text-center lg:text-right`}>2005</h3>
+                    <h2 className={`${jost.className} text-5xl lg:text-6xl font-bold text-gray-200 text-center lg:text-right`}>{albumTitle}</h2>
+                    <h3 className={`${jost.className} text-4xl lg:text-5xl font-normal text-gray-500 text-center lg:text-right`}>{albumArtist}</h3>
+                    <h3 className={`${rajdhani.className} text-4xl lg:text-5xl font-extralight text-gray-500 text-center lg:text-right`}>{albumYear}</h3>
         </div>
                   <div className="flex flex-col justify-center items-center lg:ml-auto py-5">
             <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 

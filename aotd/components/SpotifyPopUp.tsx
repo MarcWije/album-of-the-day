@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 import { belanosima } from '@/app/ui/fonts';
 import { FaSpotify } from "react-icons/fa";
