@@ -70,6 +70,9 @@ export default function AlbumPage({ album
             authorNote=  {authorNote}
             text = {text}
             />
+            <div className='flex '>
+            
+            </div>
         </div>
         <CurvedLoop 
           marqueeText={marqueeText}

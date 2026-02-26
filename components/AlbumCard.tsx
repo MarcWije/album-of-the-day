@@ -40,7 +40,21 @@ export default function AlbumCard({
 
     return(
     <div className="flex flex-col xl:flex-row gap-4 w-full xl:w-10/12 mx-auto">
-        <div className="p-6 items-center hidden xl:block xl:w-5/12">
+        <div className="p-6 items-center hidden 2xl:flex w-5/12">
+            <TiltedCard
+                imageSrc={imagesrc}
+                altText={`${albumTitle} Album Art`}
+                containerHeight="500px"
+                containerWidth="500px"
+                imageHeight="500px"
+                imageWidth="500px"
+                rotateAmplitude={18}
+                scaleOnHover={1.1}
+                showMobileWarning={false}
+                showTooltip
+            />
+        </div>
+        <div className="p-6 items-center hidden xl:flex 2xl:hidden w-5/12">
             <TiltedCard
                 imageSrc={imagesrc}
                 altText={`${albumTitle} Album Art`}
@@ -48,13 +62,27 @@ export default function AlbumCard({
                 containerWidth="400px"
                 imageHeight="400px"
                 imageWidth="400px"
-                rotateAmplitude={12}
+                rotateAmplitude={18}
                 scaleOnHover={1.2}
                 showMobileWarning={false}
                 showTooltip
             />
         </div>
-        <div className='flex flex-col items-center xl:hidden w-full p-4'>
+        <div className="flex-col p-6 justify-center items-center ml-auto hidden lg:flex xl:hidden w-full">
+            <TiltedCard
+                imageSrc={imagesrc}
+                altText={`${albumTitle} Album Art`}
+                containerHeight="300px"
+                containerWidth="300px"
+                imageHeight="300px"
+                imageWidth="300px"
+                rotateAmplitude={18}
+                scaleOnHover={1.2}
+                showMobileWarning={false}
+                showTooltip
+            />
+        </div>
+        <div className='flex flex-col items-center lg:hidden w-full p-4'>
             <Image
                 src = {imagesrc}
                 width =  {500}
