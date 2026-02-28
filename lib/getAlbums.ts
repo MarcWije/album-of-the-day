@@ -5,7 +5,7 @@ import { remark } from "remark";
 import html from "remark-html";
 import Rand, { PRNG } from 'rand-seed';
 import { error } from "console";
-import { getDate } from "getDate";
+import { getDate } from "@/lib/getDate";
 
 const albumsDirectory = path.join(process.cwd(), "components/albums");
 
