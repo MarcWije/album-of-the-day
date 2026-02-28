@@ -1,3 +1,5 @@
+'use client'
+
 export function getDate(): string {
   const now = new Date();
   const day = now.getDate().toString()
