@@ -78,7 +78,7 @@ export async function getAllAlbums(): Promise<AlbumData[]> {
 export async function getTodaysAlbum(): Promise<AlbumData> {
   let date = getDate()
   let id = ""
-  let album : AlbumData
+  let album : AlbumData = null
 
   fs.readdirSync(albumsDirectory).forEach(async file =>{
     const fullPath = path.join(albumsDirectory, file);
