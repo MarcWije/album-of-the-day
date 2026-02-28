@@ -5,7 +5,6 @@ import { remark } from "remark";
 import html from "remark-html";
 import Rand, { PRNG } from 'rand-seed';
 import { error } from "console";
-import { getDate } from "@/lib/getDate";
 
 const albumsDirectory = path.join(process.cwd(), "components/albums");
 
@@ -28,6 +27,19 @@ export type AlbumData = {
   authorNote: string;
   text: string;
 };
+
+export function getDate(): string {
+  const now = new Date();
+  const day = now.getDate().toString()
+  let month = (now.getMonth() + 1).toString()
+  if (now.getMonth() < 10){
+    month = "0" + month;
+  }
+  const year = now.getFullYear().toString()
+  let date: string =  day + month + year
+
+  return date
+}
 
 export async function getAlbum(filename: string): Promise<AlbumData> {
   const fullPath = path.join(albumsDirectory, filename);
@@ -66,6 +78,7 @@ export async function getAllAlbums(): Promise<AlbumData[]> {
 export async function getTodaysAlbum(): Promise<AlbumData> {
   let date = getDate()
   let id = ""
+  let album : AlbumData
 
   fs.readdirSync(albumsDirectory).forEach(async file =>{
     const fullPath = path.join(albumsDirectory, file);
@@ -78,14 +91,18 @@ export async function getTodaysAlbum(): Promise<AlbumData> {
         .use(html)
         .process(content);
 
-      return {
+      album = {
         ...data,
         text: contentHtml.toString(),
       } as AlbumData;
 
     }
   });
-  return getAlbum("octavarium.md")
+  if (album) {
+    return album;
+  } else {
+    return getAlbum("octavarium.md")
+  }
 }
 
 export async function randomAlbum(): Promise<AlbumData>{
