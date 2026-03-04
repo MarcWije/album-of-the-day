@@ -6,7 +6,7 @@ import SpotifyPopup from '@/components/SpotifyPopUp';
 import AlbumCard from '@/components/AlbumCard';
 import Review from '@/components/Review';
 import { AlbumData } from '@/lib/getAlbums';
-import FunFact from '@/components/FunFact';
+import FunFact from '@/components/FunFact'; 
 import Location from '@/components/Location';
 
 interface AlbumPageProps{

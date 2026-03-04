@@ -123,6 +123,7 @@ export async function randomAlbum(): Promise<AlbumData>{
   });
   const random = Math.random()
   const rand2 = Math.trunc(random * 100 )
+  console.log(rand2)
   const filename = albums.get(rand2 % albums.size);
   if (!filename){
     throw new Error("Random album selection failed")
