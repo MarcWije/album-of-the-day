@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import AlbumPage from '@/components/AlbumPage';
 import { randomAlbum } from '@/lib/getAlbums';
 
