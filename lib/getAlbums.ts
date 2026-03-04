@@ -4,16 +4,14 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 import Rand, { PRNG } from 'rand-seed';
-import { error } from "console";
+import getMap from "./HashMap";
 
 const albumsDirectory = path.join(process.cwd(), "components/albums");
 
 export type AlbumData = {
-  filename: string;
   albumId: string;
   heading: string;
   subheading: string;
-  date: string;
   albumTitle: string;
   albumArtist: string;
   albumYear: string;
@@ -39,6 +37,7 @@ export async function getAlbum(filename: string): Promise<AlbumData> {
 
     return {
     ...data,
+    subheading: dateFormat(),
     text: contentHtml.toString(),
     } as AlbumData;
 }
@@ -75,29 +74,39 @@ export function getDate(): string {
   return date
 }
 
+export function dateFormat(): string {
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+  const now = new Date()
+  const date = now.getDate()
+  const month = months[now.getMonth()]
+  const year = now.getFullYear()
+  const day = days[now.getDay()] 
+
+  let dateSuf = ""
+  if (date == 1 || date == 21 || date == 31){
+    dateSuf = "st"
+  } else if (date == 2 || date == 22){
+    dateSuf = "nd"
+  } else if (date == 3 || date == 23){
+    dateSuf = "rd"
+  } else {
+    dateSuf = "th"
+  }
+
+  return day + ", " + date + dateSuf + " of " + month + ", " + year
+
+}
+
 export async function getTodaysAlbum(): Promise<AlbumData> {
   let date = getDate()
-  let id = ""
 
-  fs.readdirSync(albumsDirectory).forEach(async file =>{
-    const fullPath = path.join(albumsDirectory, file);
-    const fileContents = fs.readFileSync(fullPath, "utf8")
-    const { data, content } = matter(fileContents);
-    
-    if(data.date === date){
-
-      const contentHtml = await remark()
-        .use(html)
-        .process(content);
-
-      return {
-        ...data,
-        text: contentHtml.toString(),
-      } as AlbumData;
-
-    }
-  });
-  return getAlbum("octavarium.md")
+  let map : Map<string, string> = getMap()
+  let id = map.get(date)
+  if (!id){
+    id = "octavarium.md"
+  }
+  return getAlbum(id)
 }
 
 export async function randomAlbum(): Promise<AlbumData>{
