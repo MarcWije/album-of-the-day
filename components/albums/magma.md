@@ -1,9 +1,6 @@
 ---
-filename: "magma.md"
 albumId: "7D7V6M05UIOTjLdqbwRX0w"
 heading: "Album of the Day"
-subheading: "February 27th, 2026"
-date: "27022026"
 albumTitle: "Magma"
 albumArtist: "Gojira"
 albumYear: "2016"

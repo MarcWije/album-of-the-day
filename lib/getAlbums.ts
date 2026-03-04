@@ -3,7 +3,6 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
-import Rand, { PRNG } from 'rand-seed';
 import getMap from "./HashMap";
 
 const albumsDirectory = path.join(process.cwd(), "components/albums");
@@ -63,14 +62,16 @@ export async function getAllAlbums(): Promise<AlbumData[]> {
 
 export function getDate(): string {
   const now = new Date();
-  const day = now.getDate().toString()
+  let day = now.getDate().toString()
+  if (now.getDate() < 10){
+    day = "0" + day;
+  }
   let month = (now.getMonth() + 1).toString()
   if (now.getMonth() < 10){
     month = "0" + month;
   }
   const year = now.getFullYear().toString()
   let date: string =  day + month + year
-
   return date
 }
 
@@ -100,9 +101,11 @@ export function dateFormat(): string {
 
 export async function getTodaysAlbum(): Promise<AlbumData> {
   let date = getDate()
-
+  console.log(date)
   let map : Map<string, string> = getMap()
   let id = map.get(date)
+  console.log(map)
+  console.log(id)
   if (!id){
     id = "octavarium.md"
   }
@@ -110,15 +113,14 @@ export async function getTodaysAlbum(): Promise<AlbumData> {
 }
 
 export async function randomAlbum(): Promise<AlbumData>{
-  let date = getDate()
   let albums = new Map <number,string>()
   let count : number = 0
   fs.readdirSync(albumsDirectory).forEach(file =>{
     albums.set(count, file)
     count++
   });
-  const random = new Rand(date)
-  const rand2 = Math.trunc(random.next() * 100 )
+  const random = Math.random()
+  const rand2 = Math.trunc(random * 100 )
   const filename = albums.get(rand2 % albums.size);
   if (!filename){
     throw new Error("Random album selection failed")

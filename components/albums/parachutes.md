@@ -1,9 +1,6 @@
 ---
-filename: "parachutes.md"
 albumId: "6ZG5lRT77aJ3btmArcykra"
 heading: "Album of the Day"
-subheading: "February 28th, 2026"
-date: "28022026"
 albumTitle: "Parachutes"
 albumArtist: "Coldplay"
 albumYear: "2000"

@@ -1,9 +1,6 @@
 ---
-filename: "the-bends.md"
 albumId: "35UJLpClj5EDrhpNIi4DFg"
 heading: "Album of the Day"
-subheading: "March 1st, 2026"
-date: "01032026"
 albumTitle: "The Bends"
 albumArtist: "Radiohead"
 albumYear: "1994"
