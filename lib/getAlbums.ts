@@ -26,6 +26,19 @@ export type AlbumData = {
   text: string;
 };
 
+export function getDate(): string {
+  const now = new Date();
+  const day = now.getDate().toString()
+  let month = (now.getMonth() + 1).toString()
+  if (now.getMonth() < 10){
+    month = "0" + month;
+  }
+  const year = now.getFullYear().toString()
+  let date: string =  day + month + year
+
+  return date
+}
+
 export async function getAlbum(filename: string): Promise<AlbumData> {
   const fullPath = path.join(albumsDirectory, filename);
   const fileContents = fs.readFileSync(fullPath, "utf8");
