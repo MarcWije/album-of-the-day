@@ -7,6 +7,8 @@ import getMap from "./HashMap";
 
 const albumsDirectory = path.join(process.cwd(), "components/albums");
 
+export const dynamic = "force-dynamic";
+
 export type AlbumData = {
   albumId: string;
   heading: string;
