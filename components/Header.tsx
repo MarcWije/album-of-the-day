@@ -1,6 +1,6 @@
 "use client"
 
-import { belanosima, bellota, baskervville, jost, rajdhani } from '@/app/ui/fonts';
+import { belanosima, bellota } from '@/app/ui/fonts';
 import BlurText from "@/components/BlurText";
 
 

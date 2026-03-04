@@ -11,7 +11,7 @@ color3: "#B67F0B"
 albumImages: [ "/transatlanticism.jpg", "/the-bends.jpg", "/young-the-giant.jpg", "/hopes-and-fears.jpg"]
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "The Bends - Radiohead", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "We live in a beautiful world, yeah we do, yeah we do"
-authorNote: "This album review placeholder was taken from https://www.seaoftranquility.org/"
+authorNote: "Marc Wijesuriya, 2023"
 ---
 Coldplay’s debut album is the musical equivalent of a warm hug from an old friend. Warm and autumny, the soft acoustic guitars and Jonny’s fuzzy Tele, backed up by Guy’s bass and Will’s drums, with Chris’ endearing falsetto vocals give this album a very soft, cosy feeling.
 

@@ -23,6 +23,8 @@ export type AlbumData = {
   marqueeText: string;
   authorNote: string;
   text: string;
+  funfact: string;
+  location: string;
 };
 
 export async function getAlbum(filename: string): Promise<AlbumData> {

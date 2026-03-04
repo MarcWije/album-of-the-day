@@ -37,7 +37,6 @@ export default function AlbumCard({
 
     const [topIndex, setTopIndex] = useState(0);
 
-
     return(
     <div className="flex flex-col xl:flex-row gap-4 w-full xl:w-10/12 mx-auto">
         <div className="p-6 items-center hidden 2xl:flex w-5/12">
@@ -91,12 +90,12 @@ export default function AlbumCard({
                 alt = {`${albumTitle} Album Art`}
                 />
         </div>
-                <div className="flex flex-col xl:items-start space-y-3 xl:justify-center">
+        <div className="flex flex-col xl:items-start space-y-3 xl:justify-center">
                     <h2 className={`${jost.className} text-5xl xl:text-6xl font-bold text-gray-200 text-center xl:text-right`}>{albumTitle}</h2>
                     <h3 className={`${jost.className} text-4xl xl:text-5xl font-normal text-gray-500 text-center xl:text-right`}>{albumArtist}</h3>
                     <h3 className={`${rajdhani.className} text-4xl xl:text-5xl font-extralight text-gray-500 text-center xl:text-right`}>{albumYear}</h3>
         </div>
-                  <div className="flex flex-col justify-center items-center xl:ml-auto py-5">
+        <div className="flex flex-col justify-center items-center xl:ml-auto py-5">
             <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 
             <div className="flex relative w-62.5 h-62.5 xl:w-90 xl:h-90">
               <Stack
@@ -118,10 +117,10 @@ export default function AlbumCard({
               
               />
             </div>
-          <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center`}>
-            {albumNames[topIndex]}
-          </p>
-          </div>
+        <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center`}>
+        {albumNames[topIndex]}
+        </p>
+        </div>
     </div>
     )
 }

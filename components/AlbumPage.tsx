@@ -6,6 +6,8 @@ import SpotifyPopup from '@/components/SpotifyPopUp';
 import AlbumCard from '@/components/AlbumCard';
 import Review from '@/components/Review';
 import { AlbumData } from '@/lib/getAlbums';
+import FunFact from '@/components/FunFact';
+import Location from '@/components/Location';
 
 interface AlbumPageProps{
     album?: AlbumData;
@@ -33,6 +35,8 @@ export default function AlbumPage({ album
     marqueeText,
     authorNote,
     text,
+    funfact,
+    location,
   } = album;
     
     return (
@@ -65,14 +69,19 @@ export default function AlbumPage({ album
         <div className="flex p-3 justify-center">
           <SpotifyPopup albumId={albumId}/>
         </div>
-        <div className="flex flex-col items-center w-10/12 mx-auto">
+        <div className="flex flex-row items-center w-10/12 mx-auto">
           <Review
             authorNote=  {authorNote}
             text = {text}
+          />
+          <div className='flex'>
+            <FunFact
+              funfact= {funfact}
             />
-            <div className='flex '>
-            
-            </div>
+            <Location
+              location = {location}
+            />  
+          </div>
         </div>
         <CurvedLoop 
           marqueeText={marqueeText}
