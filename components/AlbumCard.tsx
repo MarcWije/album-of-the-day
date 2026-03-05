@@ -117,7 +117,7 @@ export default function AlbumCard({
               
               />
             </div>
-        <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center`}>
+        <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center w-62.5 xl:w-90`}>
         {albumNames[topIndex]}
         </p>
         </div>

@@ -69,12 +69,12 @@ export default function AlbumPage({ album
         <div className="flex p-3 justify-center">
           <SpotifyPopup albumId={albumId}/>
         </div>
-        <div className="flex flex-row items-center w-10/12 mx-auto">
+        <div className="flex flex-row w-19/24 mx-auto gap-4 justify-start items-start ">
           <Review
             authorNote=  {authorNote}
             text = {text}
           />
-          <div className='flex'>
+          <div className='flex flex-col lg:max-w-9/24'>
             <FunFact
               funfact= {funfact}
             />
