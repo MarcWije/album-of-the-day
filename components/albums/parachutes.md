@@ -12,6 +12,7 @@ albumImages: [ "/transatlanticism.jpg", "/the-bends.jpg", "/young-the-giant.jpg"
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "The Bends - Radiohead", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "We live in a beautiful world, yeah we do, yeah we do"
 authorNote: "Marc Wijesuriya, 2023"
+funfact: "The album was blocked from release in China, with the track Spies being cited as the main reason"
 ---
 Coldplay’s debut album is the musical equivalent of a warm hug from an old friend. Warm and autumny, the soft acoustic guitars and Jonny’s fuzzy Tele, backed up by Guy’s bass and Will’s drums, with Chris’ endearing falsetto vocals give this album a very soft, cosy feeling.
 

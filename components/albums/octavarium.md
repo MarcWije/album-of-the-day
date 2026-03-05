@@ -12,6 +12,7 @@ albumImages: [ "/fear-inoculum.jpg", "/metropolis-pt-2.jpg", "/ghost-reveries.jp
 albumNames: [ "Fear Inoculum - Tool", "Metropolis Part II - Dream Theater", "Ghost Reveries - Opeth", "Magma - Gojira"]
 marqueeText: "Trapped inside this Octavarium"
 authorNote: "This album review placeholder was taken from https://www.seaoftranquility.org/"
+funfact: "The piano note that ends the title track is the same note that starts the album, making the album cyclical, with each song starting on a new key of the scale, in ascending order"
 ---
 
   Dream Theater returns with their eighth studio album and in typical DT fashion, the latest release bears little resemblance to the album that came directly before it. Train of Thought was "too metal" for some fans (but not for me) and chock full of arguably over the top soloing that sometimes worked against the compositions. Those that found some of Train of Thought to be overkill should be delighted by Octavarium. Case in point: John Petrucci plays with far more restraint while Jordan Rudess' keyboards are higher up in the mix.
