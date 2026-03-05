@@ -1,4 +1,7 @@
+'use client' 
+
 import {jost} from '@/app/ui/fonts';
+import SpotlightCard from './SpotlightCard';
 
 interface FunFactProps{
     funfact?: string;
@@ -8,9 +11,11 @@ export default function FunFact({
     funfact = "This is a fun fact about the album"
 }: FunFactProps ){
     return(
-        <div className='flex p-6'>
-            <h1 className={`${jost.className} text-5xl xl:text-6xl font-bold text-gray-200 p-6 `}>Fun Fact:</h1>
-            <p className={`${jost.className} text-3xl xl:texl-4xl text-gray-400 p-6`}>{funfact}</p>
-        </div>
+        <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(255, 255, 255, 0.8)">
+            <div className='flex-col p-2'>
+                <h1 className={`${jost.className} text-6xl xl:text-7xl font-bold text-gray-200 p-2 text-center`}>FUN FACT</h1>
+                <p className={`${jost.className} text-2xl xl:texl-3xl text-gray-400 p-2`}>{funfact}</p>
+            </div>
+        </SpotlightCard>
     )
 }

@@ -12,7 +12,7 @@ albumImages: [ "/fear-inoculum.jpg", "/metropolis-pt-2.jpg", "/ghost-reveries.jp
 albumNames: [ "Fear Inoculum - Tool", "Metropolis Part II - Dream Theater", "Ghost Reveries - Opeth", "Octavarium - Dream Theater"]
 marqueeText: "Time to open your eyes to this Genocide"
 authorNote: "This review is from Pitchfork"
-funfact: "This album gave Gojira their first every Grammy nomination, in 2017 at the 59th Annual Grammy Awards, for Best Rock Album"
+funfact: "This album gave Gojira their first ever Grammy nomination, in 2017 at the 59th Annual Grammy Awards, for Best Rock Album"
 ---
 
 Gojira’s Joe Duplantier didn’t ask to be a heavy metal auteur. Before taking up arms as the singer, vocalist, and principal songwriter of the acclaimed French avant-metal outfit, the Frenchman had dreams of becoming a fireman–a career path that shifted drastically following his childhood exposure to Metallica and Voivod, which inspired him to pick up an axe and start composing his own music. “I don’t decide to do this,” he recently told Rolling Stone, “It’s bigger than me; I can’t help it.” (He’s not the only member of the Duplantier family to adopt that mindset; Joe’s brother Mario is Gojira’s drummer.) Although Duplantier’s remarks suggest a primal, intuitive musical approach, the band’s discography thus far suggests the opposite: A decade into their career, Gojira have earned a reputation as one of the genre’s most studious acts, combining intricate, highly-technical arrangements with abstract, recurringly-political lyrics, most recently on 2012’s excellent L’Enfant Sauvage.
