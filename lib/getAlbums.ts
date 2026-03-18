@@ -14,6 +14,7 @@ export type AlbumData = {
   albumTitle: string;
   albumArtist: string;
   albumYear: string;
+  genre: string;
   imagesrc: string;
   color1: string;
   color2: string;

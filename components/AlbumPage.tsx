@@ -26,6 +26,7 @@ export default function AlbumPage({ album
     albumTitle,
     albumArtist,
     albumYear,
+    genre,
     imagesrc,
     color1,
     color2,
@@ -62,6 +63,7 @@ export default function AlbumPage({ album
           albumTitle= {albumTitle}
           albumArtist= {albumArtist}
           albumYear= {albumYear}
+          genre = {genre}
           imagesrc= {imagesrc}
           albumImages={albumImages}
           albumNames={albumNames}

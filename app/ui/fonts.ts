@@ -20,6 +20,7 @@ export const baskervville = Baskervville({
 });
 
 export const jost = Jost({
+  weight: ['200', '300', '400', '500', '600', '700'],
   subsets: ['latin'],
   variable: '--font-jost',
 });

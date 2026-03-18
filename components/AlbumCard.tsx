@@ -11,6 +11,7 @@ interface AlbumCardProps{
     albumTitle?:string;
     albumArtist?:string;
     albumYear?:string;
+    genre?:string;
     albumImages?:string[];
     albumNames?:string[];
 }
@@ -20,6 +21,7 @@ export default function AlbumCard({
     albumTitle = "Octavarium",
     albumArtist = "Dream Theater",
     albumYear = "2005",
+    genre = "Progressive Metal",
     albumImages = [
         "/fear-inoculum.jpg",
         "/metropolis-pt-2.jpg",
@@ -94,6 +96,7 @@ export default function AlbumCard({
                     <h2 className={`${jost.className} text-5xl xl:text-6xl font-bold text-gray-200 text-center xl:text-right`}>{albumTitle}</h2>
                     <h3 className={`${jost.className} text-4xl xl:text-5xl font-normal text-gray-500 text-center xl:text-right`}>{albumArtist}</h3>
                     <h3 className={`${rajdhani.className} text-4xl xl:text-5xl font-extralight text-gray-500 text-center xl:text-right`}>{albumYear}</h3>
+                    <h3 className={`${jost.className} text-3xl xl:text-4xl font-extralight text-gray-500 text-center xl:text-right`}><i>{genre}</i></h3>
         </div>
         <div className="flex flex-col justify-center items-center xl:ml-auto py-5">
             <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 
