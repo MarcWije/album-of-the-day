@@ -6,9 +6,9 @@ albumArtist: "Dream Theater"
 albumYear: "2005"
 genre: "Progressive Metal"
 imagesrc: "/octavarium.jpg"
-color1: "#000009"
-color2: "#184054"
-color3: "#245F7C"
+color1: "#29211a"
+color2: "#504132"
+color3: "#503232"
 albumImages: [ "/fear-inoculum.jpg", "/metropolis-pt-2.jpg", "/ghost-reveries.jpg", "/magma.jpg"]
 albumNames: [ "Fear Inoculum - Tool", "Metropolis Part II - Dream Theater", "Ghost Reveries - Opeth", "Magma - Gojira"]
 marqueeText: "Trapped inside this Octavarium"

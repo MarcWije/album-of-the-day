@@ -93,7 +93,7 @@ export default function AlbumCard({
                 />
         </div>
         <div className="flex flex-col xl:items-start space-y-3 xl:justify-center">
-                    <h2 className={`${jost.className} text-5xl xl:text-6xl font-bold text-gray-200 text-center xl:text-right`}>{albumTitle}</h2>
+                    <h2 className={`${jost.className} text-5xl xl:text-6xl font-bold text-gray-200 text-center xl:text-left`}>{albumTitle}</h2>
                     <h3 className={`${jost.className} text-4xl xl:text-5xl font-normal text-gray-500 text-center xl:text-right`}>{albumArtist}</h3>
                     <h3 className={`${rajdhani.className} text-4xl xl:text-5xl font-extralight text-gray-500 text-center xl:text-right`}>{albumYear}</h3>
                     <h3 className={`${jost.className} text-3xl xl:text-4xl font-extralight text-gray-500 text-center xl:text-right`}><i>{genre}</i></h3>

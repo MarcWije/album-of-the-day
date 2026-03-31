@@ -26,4 +26,4 @@ The album opens with Brendon straight up lying to us, singing "You don't have to
 
 The album then takes an interlude(?) in the form of the ukulele-through-the-telephone *I Have Friends In Holy Spaces*, which is a short, 1-and-a-half minute wistful ramble featuring a couple of trumpets, which then transistions into the most serious (and devastatingly sad, if you love this album) song on the album, *Northen Downpour*. Another straightforward track that relies heavily on an acoustic guitar, the track also has some of the nicest lyrics ("Hey moon, please forget to fall down"). 
 
-*When the Day Met the Night* has beautiful orchestration, telling the story of an anthropomorphic Sun and Moon with vivid lyrical imagery and complexly layered tracks to match. Brian Wilson would be proud of those harmonies. 
+*When the Day Met the Night* has beautiful orchestration, telling the story of an anthropomorphic Sun and Moon with vivid lyrical imagery and complexly layered tracks to match. Brian Wilson would be proud of those harmonies. *Pas De Cheval*, assumingly named after the ballet move, is a country-esque song 
