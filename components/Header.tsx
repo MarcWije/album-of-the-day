@@ -3,6 +3,7 @@
 import { belanosima, bellota } from '@/app/ui/fonts';
 import BlurText from "@/components/BlurText";
 import Dock from './Dock';
+import { useRouter } from "next/navigation";
 import { AiFillHome } from "react-icons/ai";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoCalendarOutline } from "react-icons/io5";
@@ -10,14 +11,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 interface HeaderProps{
     heading?: string;
     subheading?: string;
-    
-}
-
-const items = [
-    { icon: <AiFillHome size={18} />, label: 'Home', onClick: () => alert('Home!') },
-    { icon: <IoSearchOutline size={18} />, label: 'Search', onClick: () => alert('Search') },
-    { icon: <IoCalendarOutline size={18} />, label: 'Calendar', onClick: () => alert('Calendar') },
-];
+}    
 
 export default function Header({
     heading = "Album of the Day",
@@ -28,6 +22,14 @@ export default function Header({
         console.log('Animation completed!');
     };
 
+    const router = useRouter();
+
+    const items = [
+    { icon: <AiFillHome size={18} />, label: 'Home', onClick: () => router.push("/")},
+    { icon: <IoSearchOutline size={18} />, label: 'Search', onClick: () => alert('Search') },
+    { icon: <IoCalendarOutline size={18} />, label: 'Calendar', onClick: () => router.push("/calendar") },
+    ];
+
     return(
         <div className="flex flex-col items-center gap-3 text-center">
             <Dock 
@@ -35,8 +37,8 @@ export default function Header({
                 panelHeight={30}
                 baseItemSize={50}
                 magnification={60}
+                labelFont={belanosima.className}
             />
-
             <BlurText
             text={heading}
             delay={100}

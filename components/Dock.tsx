@@ -23,6 +23,7 @@ export type DockItemData = {
 export type DockProps = {
   items: DockItemData[];
   className?: string;
+  labelFont?: string;
   distance?: number;
   panelHeight?: number;
   baseItemSize?: number;
@@ -141,6 +142,7 @@ function DockIcon({ children, className = '' }: DockIconProps) {
 export default function Dock({
   items,
   className = '',
+  labelFont = '',
   spring = { mass: 0.1, stiffness: 150, damping: 12 },
   magnification = 60,
   distance = 200,
@@ -186,7 +188,10 @@ export default function Dock({
             baseItemSize={baseItemSize}
           >
             <DockIcon>{item.icon}</DockIcon>
-            <DockLabel>{item.label}</DockLabel>
+            <DockLabel 
+              className={labelFont}>
+                {item.label}
+            </DockLabel>
           </DockItem>
         ))}
       </motion.div>
