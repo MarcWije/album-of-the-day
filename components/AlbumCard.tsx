@@ -102,7 +102,7 @@ export default function AlbumCard({
             <h3 className={`${jost.className} text-2xl font-light text-gray-400 text-center`}>SIMILAR ALBUMS:</h3> 
             <div className="flex relative w-62.5 h-62.5 xl:w-90 xl:h-90">
               <Stack
-                randomRotation={false}
+                randomRotation={true}
                 sensitivity={200}
                 sendToBackOnClick={true}
                 cards={albumImages.map((src, i) => (
@@ -120,7 +120,7 @@ export default function AlbumCard({
               
               />
             </div>
-        <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center w-62.5 xl:w-90`}>
+        <p className={`${rajdhani.className} text-xl font-normal text-gray-300 mt-2 text-center w-62.5 xl:w-90 py-2`}>
         {albumNames[topIndex]}
         </p>
         </div>

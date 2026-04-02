@@ -12,9 +12,9 @@ export default function FunFact({
 }: FunFactProps ){
     return(
         <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 255, 255, 0.3)">
-            <div className='flex-col p-2'>
-                <h1 className={`${jost.className} text-6xl xl:text-7xl font-bold text-gray-200 p-2 text-center`}>FUN FACT</h1>
-                <p className={`${jost.className} text-2xl xl:texl-3xl text-gray-400 p-2`}>{funfact}</p>
+            <div className='flex-col px-2 xl:p-2'>
+                <h1 className={`${jost.className} text-5xl xl:text-7xl font-bold text-gray-200 p-2 text-center`}>FUN FACT</h1>
+                <p className={`${jost.className} text-md xl:text-xl text-gray-400 xl:p-2`}>{funfact}</p>
             </div>
         </SpotlightCard>
     )

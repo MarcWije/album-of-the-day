@@ -6,9 +6,9 @@ albumArtist: "Gojira"
 albumYear: "2016"
 genre: "Progressive Metal"
 imagesrc: "/magma.jpg"
-color1: "#000009"
-color2: "#303030"
-color3: "#696969"
+color1: "#2d2f26"
+color2: "#4c5f50"
+color3: "#525f4c"
 albumImages: [ "/fear-inoculum.jpg", "/metropolis-pt-2.jpg", "/ghost-reveries.jpg", "/octavarium.jpg"]
 albumNames: [ "Fear Inoculum - Tool", "Metropolis Part II - Dream Theater", "Ghost Reveries - Opeth", "Octavarium - Dream Theater"]
 marqueeText: "Time to open your eyes to this Genocide"

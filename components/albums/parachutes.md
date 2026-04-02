@@ -6,9 +6,9 @@ albumArtist: "Coldplay"
 albumYear: "2000"
 genre: "Acoustic / Post-Grunge"
 imagesrc: "/parachutes.jpg"
-color1: "#000009"
-color2: "#865D08"
-color3: "#B67F0B"
+color1: "#09053f"
+color2: "#086269"
+color3: "#083169"
 albumImages: [ "/transatlanticism.jpg", "/the-bends.jpg", "/young-the-giant.jpg", "/hopes-and-fears.jpg"]
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "The Bends - Radiohead", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "We live in a beautiful world, yeah we do, yeah we do"
