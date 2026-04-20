@@ -45,22 +45,21 @@ export async function getAlbum(filename: string): Promise<AlbumData> {
 }
 
 export async function getAllAlbums(): Promise<AlbumData[]> {
-  
-  let albums: AlbumData[] = []
-  fs.readdirSync(albumsDirectory).forEach(async file =>{
-    const fullPath = path.join(albumsDirectory, file);
-    const fileContents = fs.readFileSync(fullPath, "utf8")
-    const { data, content } = matter(fileContents);
-    const contentHtml = await remark()
-    .use(html)
-    .process(content);
+  const files = fs.readdirSync(albumsDirectory);
 
-    albums.push({
-      ...data,
-      text: contentHtml.toString(),
-    } as AlbumData) 
-  });
-  return albums
+  return Promise.all(
+    files.map(async (file) => {
+      const fullPath = path.join(albumsDirectory, file);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
+      const { data, content } = matter(fileContents);
+      const contentHtml = await remark().use(html).process(content);
+
+      return {
+        ...data,
+        text: contentHtml.toString(),
+      } as AlbumData;
+    })
+  );
 }
 
 export function getDate(): string {
