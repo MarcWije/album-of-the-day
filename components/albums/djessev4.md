@@ -6,9 +6,9 @@ albumArtist: "Jacob Collier"
 albumYear: "2024"
 genre: "Choral / Everything"
 imagesrc: "/djessev4.jpg"
-color1: "#969696"
-color2: "#5c5c5c"
-color3: "#3B3B3B"
+color1: "#924b09"
+color2: "#4b2404"
+color3: "#a85109"
 albumImages: [ "/family-dinnerv2.jpg", "/we-are.jpg", "/djessev1.jpg", "/to-let-a-good-thing-die.jpg"]
 albumNames: [ "Family Dinner Vol. II - Snarky Puppy", "We Are - John Batiste", "Djesse Vol. I - Jacob Collier", "To Let A Good Thing Die - Bruno Major"]
 marqueeText: "I'll be waitin' on the world"
