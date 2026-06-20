@@ -11,9 +11,10 @@ import Location from '@/components/Location';
 
 interface AlbumPageProps{
     album?: AlbumData;
+    allAlbums?: AlbumData[];
 }
 
-export default function AlbumPage({ album
+export default function AlbumPage({ album, allAlbums = []
 }: AlbumPageProps){
   if (!album) {
     return <p>No album found.</p>;

@@ -17,6 +17,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "fs": "0.0.1-security",
+    "fuse.js": "^7.4.2",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.575.0",
     "motion": "^12.23.12",
