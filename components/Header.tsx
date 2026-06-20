@@ -23,6 +23,7 @@ export default function Header({
     allAlbums = [],
 }: HeaderProps) {
 
+    const [searchOpen, setSearchOpen] = useState(false);
     const handleAnimationComplete = () => {
         console.log('Animation completed!');
     };
@@ -31,7 +32,7 @@ export default function Header({
 
     const items = [
     { icon: <AiFillHome size={18} />, label: 'Home', onClick: () => router.push("/")},
-    { icon: <IoSearchOutline size={18} />, label: 'Search', onClick: () => alert('Search') },
+    { icon: <IoSearchOutline size={18} />, label: 'Search', onClick: () => setSearchOpen(true) },
     { icon: <IoCalendarOutline size={18} />, label: 'Calendar', onClick: () => router.push("/calendar") },
     ];
 

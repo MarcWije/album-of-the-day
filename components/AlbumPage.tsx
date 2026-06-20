@@ -59,6 +59,7 @@ export default function AlbumPage({ album, allAlbums = []
         <Header
           heading= {heading}
           subheading= {subheading}
+          allAlbums = {allAlbums}
         />
         <AlbumCard
           albumTitle= {albumTitle}

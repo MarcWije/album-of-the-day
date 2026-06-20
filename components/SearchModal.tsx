@@ -16,6 +16,7 @@ interface SearchModalProps {
 }
 
 export default function SearchModal({ albums, isOpen, onClose }: SearchModalProps) {
+  console.log(albums.length)
   const [query, setQuery] = useState("");
   const results = query.trim() ? searchAlbums(albums, query) : [];
   const inputRef = useRef<HTMLInputElement>(null);
@@ -39,8 +40,8 @@ export default function SearchModal({ albums, isOpen, onClose }: SearchModalProp
     return () => window.removeEventListener("keydown", handler);
   }, [onClose]);
 
-  function handleSelect(albumId: string) {
-    router.push(`/${albumId}`);
+  function handleSelect(slug: string) {
+    router.push(`/${slug}`);
     onClose();
   }
 
@@ -97,8 +98,8 @@ export default function SearchModal({ albums, isOpen, onClose }: SearchModalProp
                 >
                   {results.map((album, i) => (
                     <button
-                      key={album.albumId}
-                      onClick={() => handleSelect(album.albumId)}
+                      key={album.slug}
+                      onClick={() => handleSelect(album.slug)}
                       className={`w-full flex items-center gap-4 px-4 py-3 hover:bg-zinc-800/80 transition-colors text-left ${
                         i !== results.length - 1 ? "border-b border-zinc-800" : ""
                       }`}

@@ -9,6 +9,7 @@ const albumsDirectory = path.join(process.cwd(), "components/albums");
 
 export type AlbumData = {
   albumId: string;
+  slug: string;
   heading: string;
   subheading: string;
   albumTitle: string;
@@ -39,6 +40,7 @@ export async function getAlbum(filename: string): Promise<AlbumData> {
 
     return {
     ...data,
+    slug: filename.replace(".md", ""),
     subheading: dateFormat(),
     text: contentHtml.toString(),
     } as AlbumData;
@@ -46,20 +48,16 @@ export async function getAlbum(filename: string): Promise<AlbumData> {
 
 export async function getAllAlbums(): Promise<AlbumData[]> {
   const files = fs.readdirSync(albumsDirectory);
-
-  return Promise.all(
-    files.map(async (file) => {
+  return files.map((file) => {
       const fullPath = path.join(albumsDirectory, file);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data, content } = matter(fileContents);
-      const contentHtml = await remark().use(html).process(content);
-
+      const { data } = matter(fileContents);
       return {
         ...data,
-        text: contentHtml.toString(),
+        slug: file.replace(".md", ""),
+        text: "",
       } as AlbumData;
-    })
-  );
+    });
 }
 
 export function getDate(): string {
@@ -138,6 +136,7 @@ export async function randomAlbum(): Promise<AlbumData>{
 
     return {
     ...data,
+    slug: filename.replace(".md", ""),
     text: contentHtml.toString(),
     } as AlbumData;
 }
