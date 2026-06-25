@@ -13,7 +13,7 @@ albumImages: [ "/neon-bible.jpg", "/takk.jpg", "/the-resistance.jpg", "/in-rainb
 albumNames: [ "Neon Bible - Arcade Fire", "Takk - Sigur Ros", "The Resistance - Muse", "In Rainbows - Radiohead"]
 marqueeText: "And in the end we lie awake and we dream of making our escape"
 authorNote: "Marc Wijesuriya, 2026"
-funfact: "Viva la Vida has a companion EP - Prospekt's March - which serves as essentially an extension of the album"
+funFact: "Viva la Vida has a companion EP - Prospekt's March - which serves as essentially an extension of the album"
 ---
 
 Viva la Vida is perhaps considered Coldplay's magnum opus, and with very good reason. In 42 minutes, Coldplay manages to tell us the story of revolutionaries toppling a tyrannical monarchy through stadium-worthy tracks that are still as popular nearly 20 years later. It's rare that an album blends story-telling, instrumentation and for lack of a better word, lore, into a cohesive piece of art, but here is Viva la Vida. 

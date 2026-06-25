@@ -37,7 +37,7 @@ export default function AlbumPage({ album, allAlbums = []
     marqueeText,
     authorNote,
     text,
-    funfact,
+    funFact,
     location,
   } = album;
     
@@ -80,7 +80,7 @@ export default function AlbumPage({ album, allAlbums = []
           />
           <div className='flex flex-col xl:max-w-9/24'>
             <FunFact
-              funfact= {funfact}
+              funFact= {funFact}
             />
             <Location
               location = {location}

@@ -6,9 +6,9 @@ albumArtist: "Radiohead"
 albumYear: "1994"
 genre: "Britpop / Alt Rock"
 imagesrc: "/the-bends.jpg"
-color1: "#000009"
-color2: "#6A1D02"
-color3: "#A72E04"
+color1: "#020f13"
+color2: "#073746"
+color3: "#0b486b"
 albumImages: [ "/transatlanticism.jpg", "/parachutes.jpg", "/young-the-giant.jpg", "/hopes-and-fears.jpg"]
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "Parachutes - Coldplay", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "Everything is broken"
