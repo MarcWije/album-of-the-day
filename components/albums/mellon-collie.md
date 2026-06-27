@@ -13,7 +13,7 @@ albumImages: [ "/superunknown.jpg", "/the-colour-and-the-shape.jpg", "/room-on-f
 albumNames: [ "Superunknown - Sound Garden", "The Colour and the Shape - The Foo Fighters", "Room On Fire - The Strokes", "Marvin's Marvellous Mechanical Museum - Tally Hall"]
 marqueeText: "Ain't it funny how we pretend we're still a child?"
 authorNote: "Marc Wijesuriya, 2026"
-funFact: "The woman portrayed on the album cover is a collage of two paintings: Raphael's 'Saint Catherine of Alexandria', and Jean-Baptiste Greuze's 'The Souvenir' "
+funFact: ["The woman portrayed on the album cover is a collage of two paintings: Raphael's 'Saint Catherine of Alexandria', and Jean-Baptiste Greuze's 'The Souvenir' "]
 ---
 Mellon Collie and the Infinite Sadness is a grand, elaborate double album combining orchestral rock with classic 90s American grunge. With 28 tracks and a running time of over 2 hours, it has rightfully earned its place as one of the most ambitious grunge albums ever recorded. 
 

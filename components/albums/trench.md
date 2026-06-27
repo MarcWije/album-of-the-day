@@ -13,5 +13,5 @@ albumImages: [ "/transatlanticism.jpg", "/the-bends.jpg", "/young-the-giant.jpg"
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "The Bends - Radiohead", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "you can learn to levitate with just a little help"
 authorNote: "Marc Wijesuriya, 2026"
-funFact: "The album's release was announced through an online scavenger hunt, with clues appearing in fan's inboxes and encrypted codes posted in random websites"
+funFact: ["The album's release was announced through an online scavenger hunt, with clues appearing in fan's inboxes and encrypted codes posted in random websites"]
 ---

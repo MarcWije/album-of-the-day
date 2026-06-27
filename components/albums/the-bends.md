@@ -13,7 +13,7 @@ albumImages: [ "/transatlanticism.jpg", "/parachutes.jpg", "/young-the-giant.jpg
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "Parachutes - Coldplay", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "Everything is broken"
 authorNote: "~ Marc Wijesuriya, 2026"
-funFact: "The artwork of this album is a mannequin from the John Radcliffe Hospital in Oxford"
+funFact: ["The artwork of this album is a mannequin from the John Radcliffe Hospital in Oxford"]
 ---
 How does one describe _The Bends_? Radiohead's sophomore album, released in 1995, is also probably responsible for shaping the wave of Britpop that came out of the late 90s and early 2000s, casting its formidable shadow over bands like Coldplay, Muse, and Travis, who arguably only sound like Radiohead if this is your first time listening to British rock music. Coldplay is warmer, Muse more theatrical, and my apologies to Travis, but I really only know them thanks to countless comparisons to Radiohead. But we aren't here to talk about them. 
 

@@ -13,7 +13,7 @@ albumImages: [ "/aim-and-ignite.jpg", "/grand-romantic.jpg", "/gimme-fiction.jpg
 albumNames: [ "Aim and Ignite - fun.", "Grand Romantic - Nate Ruess", "Gimme Fiction - Spoon", "A Bad Girl in Harlem - New Politics" ]
 marqueeText: "And I know I could be more clever, and I know I could be more strong"
 authorNote: "~ Marc Wijesuriya, 2026"
-funFact: "The slow motion video effect for We Are Young meant that the band had to record the song at double speed, and there's actually a clip on YouTube of them doing exactly that"
+funFact: ["The slow motion video effect for We Are Young meant that the band had to record the song at double speed, and there's actually a clip on YouTube of them doing exactly that"]
 ---
 When I was 12, fun. released Some Nights, an album that ended up shaping my music taste for good. Despite having released their (in hindsight, arguably even better) debut album _Aim and Ignite_ back in 2009, they burst into public consciousness fuelled by a hat-trick of chart topping singles, led by the Grammy winning _We Are Young_, followed by the title track, and _Carry On_. 
 

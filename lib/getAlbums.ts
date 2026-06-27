@@ -25,7 +25,7 @@ export type AlbumData = {
   marqueeText: string;
   authorNote: string;
   text: string;
-  funFact: string;
+  funFact: string[];
   location: string;
 };
 

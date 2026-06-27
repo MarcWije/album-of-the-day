@@ -13,7 +13,7 @@ albumImages: [ "/siamese-dream.jpg", "/mbv.jpg", "/the-downward-spiral.jpg", "/s
 albumNames: [ "Siamese Dream - The Smashing Pumpkins", "m b v - My Bloody Valentine", "The Downward Spiral - Nine Inch Nails", "Lift Your Skinny Fists like Antennas to Heaven - Godspeed You! Black Emperor"]
 marqueeText: "turn my head into sound"
 authorNote: "Marc Wijesuriya, 2026"
-funfact: "Kenny Feinstein of the band Water Tower recorded an entirely acoustic version of this album"
+funfact: ["Kenny Feinstein of the band Water Tower recorded an entirely acoustic version of this album"]
 ---
 commonly regarded as the defining album of the shoegaze genre (so-called because band members would perform on stage while gazing at their guitar pedals), loveless took years to complete and cost so much money that My Bloody Valentine was subsequently dropped by their label, Creation.
 

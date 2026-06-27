@@ -13,5 +13,5 @@ albumImages: [ "/transatlanticism.jpg", "/the-bends.jpg", "/young-the-giant.jpg"
 albumNames: [ "Transatlanticism - Death Cab for Cutie", "The Bends - Radiohead", "Young the Giant - Young the Giant", "Hopes and Fears - Keane"]
 marqueeText: "my names blurryface and i care what you think"
 authorNote: "Marc Wijesuriya, 2026"
-funfact: "The dots on the album cover each represent a song on the album"
+funFact: "The dots on the album cover each represent a song on the album"
 ---

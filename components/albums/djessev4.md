@@ -13,7 +13,7 @@ albumImages: [ "/family-dinnerv2.jpg", "/we-are.jpg", "/djessev1.jpg", "/to-let-
 albumNames: [ "Family Dinner Vol. II - Snarky Puppy", "We Are - John Batiste", "Djesse Vol. I - Jacob Collier", "To Let A Good Thing Die - Bruno Major"]
 marqueeText: "I'll be waitin' on the world"
 authorNote: "Pavan Abeysinghe, 2026"
-funfact: "Witness Me took two years to finish. It started as a casual session with Shawn Mendes in Malibu in 2021, then Collier flew separately to Arlington, Texas to record with Kirk Franklin for a day, then sent the track to Stormzy who recorded his part independently. Four artists, three cities, two years."
+funFact: ["Djesse Vol. 4 was nominated for Album of the Year at the Grammys, putting Collier in the same category as Taylor Swift and Beyoncé. He went on to win for his arrangement of Bridge Over Troubled Water, his seventh Grammy overall.", "Witness Me took two years to finish. It started as a casual session with Shawn Mendes in Malibu in 2021, then Collier flew separately to Arlington, Texas to record with Kirk Franklin for a day, then sent the track to Stormzy who recorded his part independently. Four artists, three cities, two years.", "The opener 100,000 Voices was built from audience choir recordings captured across 80+ live shows globally, including Glastonbury and Bonnaroo. Every one of those voices belongs to a real person who sang along at a concert, and became part of the record without ever knowing it"]
 ---
 
 Djesse Vol. 4 marks the victorious, wild wrap-up of the loftiest musical adventure in the 21st century. For more than six years, Collier has been creating a four-volume cosmos, and Vol. 4 is the point where he completely demolishes the walls.

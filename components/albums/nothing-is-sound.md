@@ -13,5 +13,5 @@ albumImages: [ "/oh-gravity.jpg", "/hopes-and-fears.jpg", "/x&y.jpg", "/how-to-s
 albumNames: [ "Oh Gravity - Switchfoot", "Hopes and Fears - Keane", "X&Y - Coldplay", "How to Save a Life - The Fray"]
 marqueeText: "till the world caves in"
 authorNote: "Marc Wijesuriya, 2026"
-funFact: "This album was one of the main CDs in Sony BMG's copy protection scandal, which installed software onto users computers preventing them from copying the CD, but also introducing vulnerabilities. Bassist Tim Foreman posted a workaround for this on the band's website"
+funFact: ["This album was one of the main CDs in Sony BMG's copy protection scandal, which installed software onto users computers preventing them from copying the CD, but also introducing vulnerabilities. Bassist Tim Foreman posted a workaround for this on the band's website"]
 ---

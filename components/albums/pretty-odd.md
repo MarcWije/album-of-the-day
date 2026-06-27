@@ -13,7 +13,7 @@ albumImages: [ "/pet-sounds.jpg", "/347.jpg", "/sgt-pepper.jpg", "/marvins.jpg"]
 albumNames: [ "Pet Sounds - The Beach Boys", "3:47 EST - Klaatu", "Sgt. Pepper's Lonely Hearts Club Band - The Beatles", "Marvin's Marvellous Mechanical Museum - Tally Hall"]
 marqueeText: "I know the world's a broken bone, but melt your headaches, call it home"
 authorNote: "Marc Wijesuriya, 2026"
-funFact: "Panic! at the Disco decided to drop their signature exclamation point from their name during this album's cycle, for unexplained reasons"
+funFact: ["Panic! at the Disco decided to drop their signature exclamation point from their name during this album's cycle, for unexplained reasons"]
 ---
 
 Pretty.Odd. is one of the strangest left turns in pop punk. After the success of their debut album, *A Fever You Can't Sweat Out*, Panic! at the Disco decided to spend the money they had made on buying some mushrooms and retreating to a cabin in the mountains to record the follow-up. Unsurprisingly (or not), they were unable to write anything satisfactory, and ended up scrapping most of what they wrote in the cabin (a collection of unreleased songs now known as the legendary *Cricket and Clover*). Upon returning to their hometown of Las Vegas, they began to write songs pretending they were still under the effects of said mushrooms, and the result was the Beatles-esque, psychedelic sunshiney, Pretty. Odd.

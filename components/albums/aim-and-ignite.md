@@ -13,5 +13,5 @@ albumImages: [ "/a-night-at-the-opera.jpg", "/life-in-cartoon-motion.jpg", "/dog
 albumNames: [ "A Night at the Opera - Queen", "Life in Cartoon Motion - MIKA", "Dog Problems - The Format", "Lemon Boy - Cavetown"]
 marqueeText: "I'll set the table, you can make the fire"
 authorNote: "Marc Wijesuriya, 2026"
-funfact: ""
+funFact: ""
 ---
